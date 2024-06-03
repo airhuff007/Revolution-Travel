@@ -1,0 +1,149 @@
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2 {
+    font-weight: normal;
+    color: #e45c09;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+h2 { 
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+p, li {
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+a:link {
+    color: #13aad7;
+    text-decoration: none; 
+}
+
+a:visited {
+    color: #aaa;
+}
+
+a:hover, a:focus {
+    color:#e45c09;
+    text-decoration: underline;
+}
+
+a:active {
+    color:#24d;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: 3px dashed orange; */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.hamburger {
+    width: 24px;
+    float: right;
+    padding-right: 10%;
+    padding-top: 20px;
+    cursor: pointer;
+}
+/* Mobile first means design is not visible
+until the screen gets wide */
+nav {
+    display: none;
+    /* border: 3px dashed orange; */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    /* border: 3px dashed orange; */
+    display: inline; 
+    padding: 10px;
+}
+nav a {
+    padding: 10px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+nav a:visted {
+    color: #13aad7;
+}
+
+
+main {
+    /* border: 3px dashed orange; */
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+main li{ 
+    width: 90%;
+    max-width: 800px;
+}
+
+footer {
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid #ccc;
+}
+.img-left {
+float: left;
+margin-right: 15px;
+}
+.img-right {
+ float: right;
+ margin-left: 15px;
+}
+/* Media Query for Desktop layout
+at a certain min-width, change some of the CSS to accomadate wider screen.
+The idea is mobile first, so all the regular CSS is done w
+mobile in mind */
+/* when the browser width is at least this big
+use this CSS instead of the above mobile defaults */
+@media (min-width:780px) {
+    /* body {
+        background-color: pink; */
+
+    nav {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+        
+    }
+    }
